@@ -1,10 +1,11 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar,IonFooter, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonItem, IonLabel, IonList, IonThumbnail } from '@ionic/react';
 import { useParams } from 'react-router';
 import '../css/Inicio.css';
-import Ubicação from '../components/Geolocation';
+
+const Inicio: React.FC = () => {
 
 
-const Inicio: React.FC = () => {  
+  
   const { name } = useParams<{ name: string; }>();
   return (
     
@@ -19,7 +20,6 @@ const Inicio: React.FC = () => {
       </IonHeader>
 
       <IonContent fullscreen>
-      <Ubicação />
       <IonContent className="ion-padding">
       <div className="company-presentation">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7SH_6gzdcnRYE1G78UvgJn6U9JZKLHCJMaE3bczYzXROKGjr_Y4s9ZU_4EuCJKO_f9A&usqp=CAU" alt="Logo da Empresa"/>
@@ -90,7 +90,6 @@ const Inicio: React.FC = () => {
     </IonCard>
       </IonContent>
       </IonContent>
-      
    
       <IonFooter>
         <IonToolbar>

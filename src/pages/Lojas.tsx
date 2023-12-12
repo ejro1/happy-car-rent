@@ -12,7 +12,7 @@ interface DatosdaLojas {
   instructions: string;
   morada: string;
   latitude: number;
-  altitude: number; 
+  longitude: number; 
 }
 
 const Lojas: React.FC = () => {

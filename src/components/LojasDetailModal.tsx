@@ -14,7 +14,7 @@ interface DatosdaLojas {
   morada: string;
   image?: string;
   latitude: number;
-  altitude: number; 
+  longitude: number; 
 }
 
 const LojasDetailModal: React.FC<LojasDetailModalProps> = ({ itemSelected, onClose }) => {
