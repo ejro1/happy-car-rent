@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {getInboxItems} from '../Utils/DatosdaLojas';
-import '../css/Geolocation.css';
 
 const Ubicação = () => {
     const [ubicacionActual, setUbicacionActual] = useState({ latitude: 0, longitude: 0});
