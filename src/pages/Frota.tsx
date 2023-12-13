@@ -15,6 +15,7 @@ import {
   IonList,
   IonLabel,
   IonThumbnail,
+  IonSearchbar,
 } from '@ionic/react';
 import { getInboxItems } from '../Utils/Veículos';
 import FrotaModal from '../components/FrotaModal';
@@ -55,12 +56,12 @@ const Frota: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader translucent={true}>
+      <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Frota</IonTitle>
+          <IonSearchbar></IonSearchbar>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

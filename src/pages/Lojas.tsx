@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonSearchbar } from '@ionic/react';
 import { checkmark, closeCircleOutline } from 'ionicons/icons';
 import { useState } from "react";
 import "../css/Lojas.css";
@@ -32,12 +32,12 @@ const Lojas: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader translucent={true}>
+      <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Lojas</IonTitle>
+          <IonSearchbar></IonSearchbar>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

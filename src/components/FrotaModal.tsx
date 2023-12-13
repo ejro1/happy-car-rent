@@ -1,5 +1,6 @@
 import React from 'react';
 import { IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonContent, IonImg } from '@ionic/react';
+import '../css/FrotaModal.css';
 
 interface FrotaModalProps {
   itemSelected: Veículos | null;

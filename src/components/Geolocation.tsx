@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {getInboxItems} from '../Utils/DatosdaLojas';
+import '../css/Geolocation.css';
 
 const Ubicação = () => {
     const [ubicacionActual, setUbicacionActual] = useState({ latitude: 0, longitude: 0});
@@ -63,7 +64,8 @@ const Ubicação = () => {
 
  return (
    <div>
-     <h1>Distancias a tiendas desde tu ubicación:</h1>
+     
+     <p>Tu ubicación actual: Latitud {ubicacionActual.latitude.toFixed(6)}, Longitud {ubicacionActual.longitude.toFixed(6)}</p>
      <ul>
        {distanciasTiendas.map((tienda) => (
          <li key={tienda.nombre}>
