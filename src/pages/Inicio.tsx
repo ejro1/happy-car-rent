@@ -23,7 +23,7 @@ const Inicio: React.FC = () => {
       <IonContent className="ion-padding">
       <div className="company-presentation">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7SH_6gzdcnRYE1G78UvgJn6U9JZKLHCJMaE3bczYzXROKGjr_Y4s9ZU_4EuCJKO_f9A&usqp=CAU" alt="Logo da Empresa"/>
-    <h1>Bem-vindo à [Nome da Empresa]</h1>
+    <h1>Bem-vindo à Happy-Car-Rent</h1>
     <p>Sua escolha para soluções de mobilidade inovadoras e confiáveis.</p>
   </div>
 
@@ -75,10 +75,9 @@ const Inicio: React.FC = () => {
               <img  src="https://decodiaz.es/5024-large_default/etiquetas-adhesivas-30-rojoblanco-500-unidades.jpg" />
             </IonThumbnail>
             <IonLabel>Ford Explorer EV
-
             </IonLabel>
           </IonItem>
-
+          
           <IonItem lines="none">
             <IonThumbnail slot="start">
               <img  src="https://decodiaz.es/5025-large_default/etiquetas-adhesivas-40-rojoblanco-500-unidades.jpg" />
@@ -90,16 +89,7 @@ const Inicio: React.FC = () => {
     </IonCard>
       </IonContent>
       </IonContent>
-      
-   
-      <IonFooter>
-        <IonToolbar>
-          <IonTitle>Footer</IonTitle>
-        </IonToolbar>
-      </IonFooter>
     </IonPage>
-
-    
   );
 };
 

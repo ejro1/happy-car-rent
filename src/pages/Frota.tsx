@@ -13,15 +13,9 @@ import {
   IonCardTitle,
   IonCardContent,
   IonList,
-  IonItem,
   IonLabel,
-  IonNote,
   IonThumbnail,
-  IonCol,
-  IonGrid,
-  IonRow,
 } from '@ionic/react';
-import { checkmark, closeCircleOutline } from 'ionicons/icons';
 import { getInboxItems } from '../Utils/Veículos';
 import FrotaModal from '../components/FrotaModal';
 import '../css/Frota.css';
@@ -40,7 +34,7 @@ interface Veículos {
   };
   Preço: string;
   storeId: number[];
-  image: string; // Nueva propiedad para la URL de la imagen
+  image: string;
 }
 
 const Frota: React.FC = () => {
@@ -71,9 +65,6 @@ const Frota: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Frota</IonTitle>
-          </IonToolbar>
         </IonHeader>
         <IonList>
           

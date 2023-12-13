@@ -1,9 +1,8 @@
 import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { BrowserRouter as Router, Route, Link,Redirect } from 'react-router-dom';
-
+import {Route,Redirect } from 'react-router-dom';
 import Menu from './components/Menu';
-import Page from './pages/Page';
+
 import Inicio from './pages/Inicio';
 import Lojas from './pages/Lojas';
 import Frota from './pages/Frota';
@@ -38,10 +37,7 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/page/name" />
-            </Route>
-            <Route path="/folder/:name" exact={true}>
-              <Page />
+              <Redirect to="/Inicio" />
             </Route>
             <Route path="/Inicio" exact={true}>
               <Inicio/>
@@ -52,7 +48,6 @@ const App: React.FC = () => {
             <Route path="/Frota" exact={true}>
               <Frota/>
             </Route>
-            <Route path="/frota/:storeId" component={Frota} />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>

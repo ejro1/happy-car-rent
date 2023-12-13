@@ -3,7 +3,7 @@ import { checkmark, closeCircleOutline } from 'ionicons/icons';
 import { useState } from "react";
 import "../css/Lojas.css";
 import { getInboxItems } from '../Utils/DatosdaLojas';
-import LojasDetailModal from '../components/LojasDetailModal';
+import LojasModal from '../components/LojasModal';
 
 
 interface DatosdaLojas {
@@ -37,14 +37,11 @@ const Lojas: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Receitas</IonTitle>
+          <IonTitle>Lojas</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Receitas</IonTitle>
-          </IonToolbar>
         </IonHeader>
         <IonList>
           {Lojas.map((item, index) => (
@@ -58,7 +55,7 @@ const Lojas: React.FC = () => {
           ))}
         </IonList>
       </IonContent>
-      <LojasDetailModal itemSelected={itemSelected} onClose={handleCloseModal} />
+      <LojasModal itemSelected={itemSelected} onClose={handleCloseModal} />
     </IonPage>
   );
 };

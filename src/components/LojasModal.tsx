@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonContent, IonImg } from '@ionic/react';
 
-interface LojasDetailModalProps {
+interface LojasModalProps {
   itemSelected: DatosdaLojas | null;
   onClose: (feito: boolean, id: number) => void;
 }
@@ -17,14 +17,11 @@ interface DatosdaLojas {
   longitude: number; 
 }
 
-const LojasDetailModal: React.FC<LojasDetailModalProps> = ({ itemSelected, onClose }) => {
+const LojasModal: React.FC<LojasModalProps> = ({ itemSelected, onClose }) => {
   const history = useHistory();
 
   const verFrota = (storeId: number) => {
-    // Construye la URL de la página de la frota con el ID de la tienda como parámetro
     const frotaPageUrl = `/frota/${storeId}`;
-
-    // Navega a la página de la frota con el filtro aplicado
     history.push(frotaPageUrl);
   };
 
@@ -50,4 +47,4 @@ const LojasDetailModal: React.FC<LojasDetailModalProps> = ({ itemSelected, onClo
   );
 };
 
-export default LojasDetailModal;
+export default LojasModal;
