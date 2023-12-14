@@ -38,7 +38,7 @@ const FrotaModal: React.FC<FrotaModalProps> = ({ itemSelected, onClose }) => {
       <IonContent className="ion-padding">
         <p>{itemSelected?.descripção}</p>
 
-        {/* Accede a las propiedades específicas de Dadostécnicos */}
+     
         {itemSelected?.Dadostécnicos && (
           <>
             <p>Motor: {itemSelected.Dadostécnicos.motor}</p>

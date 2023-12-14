@@ -6,7 +6,6 @@ import {
   IonHeader,
   IonMenuButton,
   IonPage,
-  IonTitle,
   IonToolbar,
   IonCard,
   IonCardHeader,

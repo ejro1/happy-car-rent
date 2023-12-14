@@ -25,7 +25,7 @@ const Ubicação = () => {
     obtenerUbicacion();
   }, []);
   const calcularDistancia = (lat1: number, lon1: number, lat2: number, lon2: number) => {
-    const radioTierra = 6371; // Radio de la Tierra en kilómetros
+    const radioTierra = 6371; 
 
     const dLat = (lat2 - lat1) * (Math.PI / 180);
     const dLon = (lon2 - lon1) * (Math.PI / 180);
@@ -45,9 +45,10 @@ const Ubicação = () => {
   };
 
 
-  const tiendas = getInboxItems(); // Obtén los datos reales de tu archivo
+  const tiendas = getInboxItems(); 
 
   const distanciasTiendas = tiendas.map((tienda) => {
+
     const distancia = calcularDistancia(
       ubicacionActual.latitude || 0,
       ubicacionActual.longitude || 0,
@@ -58,13 +59,13 @@ const Ubicação = () => {
     return { nombre: tienda.name, distancia };
   });
 
- // Ordenar el array por distancia en orden descendente
+ 
  distanciasTiendas.sort((a, b) => a.distancia - b.distancia);
 
  return (
    <div>
      
-     <p>Tu ubicación actual: Latitud {ubicacionActual.latitude.toFixed(6)}, Longitud {ubicacionActual.longitude.toFixed(6)}</p>
+     <p>Tua ubicação actual: Latitude {ubicacionActual.latitude.toFixed(6)}, Longitude {ubicacionActual.longitude.toFixed(6)}</p>
      <ul>
        {distanciasTiendas.map((tienda) => (
          <li key={tienda.nombre}>

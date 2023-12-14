@@ -20,6 +20,7 @@ const Inicio: React.FC = () => {
       </IonHeader>
         <IonContent fullscreen>
         <IonContent className="ion-padding">
+          
       <div className="company-presentation">
     <h1>Bem-vindo à Happy-Car-Rent</h1>
     <p>Sua escolha para soluções de mobilidade inovadoras e confiáveis, projetadas para atender às suas necessidades de deslocamento com
@@ -81,6 +82,7 @@ const Inicio: React.FC = () => {
         </IonList>
       </IonCardContent>
     </IonCard>
+
   </div>
 
   <div className="awards">
@@ -102,15 +104,10 @@ const Inicio: React.FC = () => {
        SUVs espaçosos e elegantes sedans, nossa frota diversificada atende a uma variedade de preferências e necessidades. Comprometemo-nos a 
        oferecer não apenas conforto e segurança, mas também um toque de luxo e estilo em cada jornada
     </p>
-    <h1>Distâncias das lojas a partir da sua localização.:</h1> 
- 
- 
+    <h1>Distâncias das lojas a partir da sua localização.:</h1>
   </div>
 
-
-  
     <Ubicação />
-   
       </IonContent>
       </IonContent>
     </IonPage>
